@@ -15,6 +15,8 @@
 		F104CDC92218DBDE00B3057B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F104CDC72218DBDE00B3057B /* LaunchScreen.storyboard */; };
 		F104CDD42218DBDE00B3057B /* concentrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104CDD32218DBDE00B3057B /* concentrationTests.swift */; };
 		F104CDDF2218DBDE00B3057B /* concentrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104CDDE2218DBDE00B3057B /* concentrationUITests.swift */; };
+		F104CDED22198B1B00B3057B /* concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104CDEC22198B1B00B3057B /* concentration.swift */; };
+		F104CDEF22198BC700B3057B /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104CDEE22198BC700B3057B /* card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F104CDDA2218DBDE00B3057B /* concentrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = concentrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F104CDDE2218DBDE00B3057B /* concentrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = concentrationUITests.swift; sourceTree = "<group>"; };
 		F104CDE02218DBDE00B3057B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F104CDEC22198B1B00B3057B /* concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = concentration.swift; sourceTree = "<group>"; };
+		F104CDEE22198BC700B3057B /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				F104CDBB2218DBDC00B3057B /* AppDelegate.swift */,
 				F104CDBD2218DBDC00B3057B /* ViewController.swift */,
 				F104CDBF2218DBDC00B3057B /* Main.storyboard */,
+				F104CDEC22198B1B00B3057B /* concentration.swift */,
+				F104CDEE22198BC700B3057B /* card.swift */,
 				F104CDC52218DBDE00B3057B /* Assets.xcassets */,
 				F104CDC72218DBDE00B3057B /* LaunchScreen.storyboard */,
 				F104CDCA2218DBDE00B3057B /* Info.plist */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F104CDC42218DBDC00B3057B /* concentration.xcdatamodeld in Sources */,
+				F104CDED22198B1B00B3057B /* concentration.swift in Sources */,
 				F104CDBE2218DBDC00B3057B /* ViewController.swift in Sources */,
+				F104CDEF22198BC700B3057B /* card.swift in Sources */,
 				F104CDBC2218DBDC00B3057B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
