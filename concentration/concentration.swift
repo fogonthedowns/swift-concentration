@@ -40,7 +40,7 @@ struct Concentration
             // matchedIndex ensures you arent clicking on the same card
             if let matchedIndex = indexOfOneAndOnlyFaceUpCard, matchedIndex != index {
                // check if cards match
-                if cards[matchedIndex].identifier == cards[index].identifier {
+                if cards[matchedIndex] == cards[index] {
                     cards[matchedIndex].isMatched = true
                     cards[index].isMatched = true
                 }

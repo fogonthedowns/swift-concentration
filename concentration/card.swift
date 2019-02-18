@@ -8,11 +8,21 @@
 
 import Foundation
 
-struct Card
+// The power of protocols 36:50
+// Y8ss6118RQY
+struct Card: Hashable
 {
     var isFaceUp = false
     var isMatched = false
-    var identifier: Int
+    private var identifier: Int
+    
+    // hashable
+    var hashValue: Int { return identifier }
+    
+    // hashable equatable 
+    static func ==(lhs:Card, rhs:Card) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
     
     static var identifierFactory = 0
     static func getUniqueIdentifier()->Int{
