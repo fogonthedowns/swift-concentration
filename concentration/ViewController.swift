@@ -54,20 +54,20 @@ class ViewController: UIViewController {
     }
     
     private var emojiChoices: Array<String> = ["🦄","🚀", "👠","🥽", "🎩", "🐃", "🐕"]
-    private var emoji = Dictionary<Int,String>()
+    private var emoji = Dictionary<Card,String>()
     private func emoji(for card: Card) -> String {
         // nested ifs can be cleaned up with a ",". The following has two conditions in one
-        if emoji[card.identifier] == nil, emojiChoices.count > 0 {
-              emoji[card.identifier] = emojiChoices.remove(at: emojiChoices.count.arc4random)
+        if emoji[card] == nil, emojiChoices.count > 0 {
+              emoji[card] = emojiChoices.remove(at: emojiChoices.count.arc4random)
         }
         
         // equivalent to the following
-        // if chosenEmoji = emoji[card.identifier] != nil {
+        // if chosenEmoji = emoji[card] != nil {
         //   return chosenEmoji
         // } else {
         //   return "?"
         // }
-        return emoji[card.identifier] ?? "?"
+        return emoji[card] ?? "?"
     }
 }
 
